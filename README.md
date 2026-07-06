@@ -55,14 +55,18 @@ unique title/description, Open Graph/Twitter tags, and JSON-LD
 python3 -m http.server 4173 --directory website
 ```
 
-## Deploying to business.flavorites.xyz
+## Deployment (live)
 
-Any static host works (Cloudflare Pages, Vercel, Netlify, GitHub Pages):
+Deployed on **GitHub Pages** from `donowop/flavorites-business-site` (main
+branch, root). The site repo is the deploy target; this `website/` directory in
+`flavorites-business` is the working copy — push changes to both or copy over.
 
-1. Point the host at the `website/` directory (no build command, output = root).
-2. Add `business.flavorites.xyz` as a custom domain and create the DNS CNAME.
-3. Serve `404.html` for unknown paths (hosts pick this up automatically or via config).
-4. Enforce HTTPS and redirect any `www.business.` or apex variants to the canonical host.
+- Custom domain: `business.flavorites.xyz` (`CNAME` file + Pages setting).
+- DNS: `CNAME business -> donowop.github.io` at the flavorites.xyz registrar.
+- `404.html` is served automatically by Pages for unknown paths.
+- `.nojekyll` disables Jekyll processing.
+- Enforce HTTPS is toggled in Pages settings once the Let's Encrypt cert
+  provisions (automatic after DNS propagates).
 
 ## Before launch — intentional TODOs
 
