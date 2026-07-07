@@ -18,9 +18,9 @@
   --hairline: #e8e3d8;
 
   /* brand */
-  --terra: #e85d3d;
-  --terra-deep: #b4432a;
-  --terra-ink: #93361f;
+  --terra: #fa5c36;
+  --terra-deep: #c74424;
+  --terra-ink: #a6371a;
   --green: #17784a;
   --green-soft: #e5efe6;
 
@@ -1046,7 +1046,7 @@ details[open] .faq-icon::before, details[open] .faq-icon::after { background: va
   font-size: clamp(6rem, 18vw, 14rem);
   letter-spacing: 0.18em;
   color: transparent;
-  -webkit-text-stroke: 1.5px rgba(232, 93, 61, 0.16);
+  -webkit-text-stroke: 1.5px rgba(250, 92, 54, 0.16);
   pointer-events: none;
   white-space: nowrap;
 }
