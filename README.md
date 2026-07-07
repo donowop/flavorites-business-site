@@ -78,11 +78,13 @@ branch, root). The site repo is the deploy target; this `website/` directory in
 - **Consumer link**: footer links to `https://flavorites.xyz/` — confirm that's
   the live consumer domain.
 - **Search Console**: verify the domain, submit `sitemap.xml`.
-- **Content updates**: pricing/program numbers on the site mirror `SPEC.md`
-  defaults ($4 min bounty, $100 min top-up, 72 h dispute window, 7-day pass,
-  $25/weekly payouts, 24–48 h claim review). If the spec changes, update
-  `pricing/`, `affiliate-program/`, `faq/`, and the `FAQPage` JSON-LD together —
-  the JSON-LD answers must match the visible text.
+- **Content updates**: program numbers on the site mirror `SPEC.md` defaults
+  ($100 min top-up, 72 h dispute window on deep-dive pages, 7-day pass,
+  $25/weekly payouts, 24–48 h claim review). Per product direction (July 2026):
+  the site advertises **no minimum bounty**, and pricing is framed as a **free
+  plan plus optional paid plans** (never "no subscription"). If the spec
+  changes, update `pricing/`, `affiliate-program/`, `faq/`, and the `FAQPage`
+  JSON-LD together — the JSON-LD answers must match the visible text.
 - **Next SEO layer**: a small blog/guides section ("restaurant referral program
   ideas", "how to get more repeat customers") targeting long-tail queries — add
   only when there's real content to publish.
