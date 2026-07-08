@@ -187,6 +187,7 @@ html.js [data-reveal].is-in { opacity: 1; transform: none; }
   white-space: nowrap;
 }
 .brand:hover { color: var(--ink); }
+.brand img { display: block; flex: none; }
 .brand .brand-badge {
   font-family: var(--font-mono);
   font-size: 0.6rem;
