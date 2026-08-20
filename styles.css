@@ -505,6 +505,29 @@ body.nav-open .site-header {
 .ticket-row dt { color: var(--ink-3); margin: 0; }
 .ticket-row dd { margin: 0; font-weight: 500; text-align: right; white-space: nowrap; }
 
+/* Hero referral story — three lines, read in five seconds */
+.ticket-story { font-size: 0.85rem; margin-top: 0.3rem; }
+.ticket-story .ticket-row { padding: 0.72rem 0; align-items: baseline; }
+.ticket-story .ticket-row + .ticket-row { border-top: 1px dashed var(--hairline); }
+.ticket-story dt { color: var(--ink); display: flex; align-items: baseline; gap: 0.55rem; }
+.ticket-story dd { font-weight: 600; }
+.story-no {
+  font-size: 0.62rem;
+  font-weight: 600;
+  color: var(--terra-deep);
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  width: 1.3rem;
+  height: 1.3rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  transform: translateY(0.15em);
+}
+.story-heart { color: var(--terra); font-size: 0.8rem; }
+.story-reward { color: var(--terra-deep); }
+
 .ticket-tear {
   position: relative;
   border-top: 2px dashed var(--line);
@@ -544,18 +567,18 @@ body.nav-open .site-header {
   opacity: 0.85;
 }
 
-/* the VERIFIED stamp */
+/* the VERIFIED stamp — lands on the tear line, clear of the story rows */
 .stamp {
   position: absolute;
-  top: 48%;
-  left: 50%;
-  padding: 0.6rem 1.2rem 0.55rem;
-  border: 3.5px solid var(--terra);
+  top: 74%;
+  left: 56%;
+  padding: 0.45rem 0.95rem 0.4rem;
+  border: 3px solid var(--terra);
   border-radius: 7px;
   color: var(--terra);
   font-family: var(--font-mono);
   font-weight: 600;
-  font-size: 1.3rem;
+  font-size: 1.02rem;
   letter-spacing: 0.28em;
   text-transform: uppercase;
   text-align: center;
