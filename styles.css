@@ -724,9 +724,10 @@ body.nav-open .site-header {
 
 .plans-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 1.1rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.2rem;
   align-items: stretch;
+  max-width: 1080px;
 }
 .plan-card {
   display: flex;
@@ -775,31 +776,18 @@ body.nav-open .site-header {
   padding-bottom: 1.05rem;
   border-bottom: 1px dashed var(--hairline);
 }
-.plan-card .checklist { gap: 0.6rem; font-size: 0.92rem; flex: 1; }
+.plan-card .checklist { gap: 0.6rem; font-size: 0.92rem; }
 .plan-card .checklist li { padding-left: 1.7rem; }
 .plan-card .checklist li::before { width: 0.9rem; height: 0.9rem; top: 0.32em; }
-.plan-card .hero-actions { margin-top: 1.25rem; }
+/* Short feature lists stay compact at the top; the button rests on the
+   card's floor so columns align without stretched spacing. */
+.plan-card .hero-actions { margin-top: auto; padding-top: 1.25rem; }
 .plan-card .btn { width: 100%; justify-content: center; }
 .plan-card.is-featured {
   border: 2px solid var(--terra);
   box-shadow: 0 24px 48px -32px rgba(199, 68, 36, 0.35);
 }
 .plan-card.is-featured .tag { color: var(--terra-deep); }
-.addon-card {
-  margin-top: 1.1rem;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
-}
-.addon-card > div > p { color: var(--ink-2); max-width: 62ch; }
-.addon-card h3 { margin-bottom: 0.4rem; }
-.addon-price { flex: none; display: grid; gap: 0.7rem; justify-items: end; text-align: right; }
-.addon-price .btn { width: auto; }
-@media (max-width: 720px) {
-  .addon-card { flex-direction: column; align-items: flex-start; }
-  .addon-price { justify-items: start; text-align: left; }
-}
 @media (max-width: 980px) {
   .plans-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
